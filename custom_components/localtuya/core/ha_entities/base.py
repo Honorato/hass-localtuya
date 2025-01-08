@@ -109,10 +109,14 @@ class DPCode(StrEnum):
     ADD_ELE2 = "add_ele2"
     AIR_QUALITY = "air_quality"
     AIR_RETURN = "air_return"
+    ALARMPERIOD = "AlarmPeriod"
+    ALARMSWITCH = "AlarmSwitch"
+    ALARMTYPE = "Alarmtype"
     ALARM_DELAY_TIME = "alarm_delay_time"
     ALARM_LOCK = "alarm_lock"
     ALARM_MESSAGE = "alarm_message"
     ALARM_RINGTONE = "alarm_ringtone"
+    ALARM_SETTING = "alarm_setting"
     ALARM_STATE = "alarm_state"
     ALARM_SWITCH = "alarm_switch"  # Alarm switch
     ALARM_TIME = "alarm_time"  # Alarm time
@@ -141,6 +145,7 @@ class DPCode(StrEnum):
     BASIC_WDR = "basic_wdr"
     BASS_CONTROL = "bass_control"
     BATTERY = "battery"
+    BATTERYSTATUS = "BatteryStatus"
     BATTERY_PERCENTAGE = "battery_percentage"  # Battery percentage
     BATTERY_STATE = "battery_state"  # Battery state
     BATTERY_VALUE = "battery_value"  # Battery value
@@ -184,6 +189,7 @@ class DPCode(StrEnum):
     COLOUR_DATA = "colour_data"  # Colored light mode
     COLOUR_DATA_HSV = "colour_data_hsv"  # Colored light mode
     COLOUR_DATA_V2 = "colour_data_v2"  # Colored light mode
+    COLOUR_DATA_RAW = "colour_data_raw"  # Colored light mode for BLE
     COMPRESSOR_COMMAND = "compressor_command"
     CONCENTRATION_SET = "concentration_set"  # Concentration setting
     CONTROL = "control"
@@ -500,6 +506,7 @@ class DPCode(StrEnum):
     SCENE_9 = "scene_9"
     SCENE_DATA = "scene_data"  # Colored light mode
     SCENE_DATA_V2 = "scene_data_v2"  # Colored light mode
+    SCENE_DATA_RAW = "scene_data_raw"  # Colored light mode for BLE
     SEEK = "seek"
     SENS = "sens"  # Ikuu SXSEN003PIR IP65 Motion Detector (Wi-Fi)
     SENSITIVITY = "sensitivity"  # Sensitivity
