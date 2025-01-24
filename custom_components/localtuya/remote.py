@@ -264,7 +264,7 @@ class LocalTuyaRemote(LocalTuyaEntity, RemoteEntity):
                     command[NSDP_DELAY] = delay
             command = {self._dp_id: json.dumps(command)}
 
-        self.debug(f"Sending IR Command: {command}")
+        self.warning(f"Sending IR Command: {command}")
         await self._device.set_dps(command)
 
     async def _delete_command(self, device, command) -> None:
