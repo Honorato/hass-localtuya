@@ -312,9 +312,9 @@ class LocalTuyaRemote(LocalTuyaEntity, RemoteEntity):
                         command[NSDP_DELAY] = delay
             command = {self._dp_id: json.dumps(command)}
 
-        self.debug(f"Sending Command: {command}")
+        self.warning(f"Sending Command: {command}")
         if rf_data:
-            self.debug(f"Decoded RF Button: {rf_data}")
+            self.warning(f"Decoded RF Button: {rf_data}")
 
         await self._device.set_dps(command)
 
